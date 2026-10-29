@@ -1,0 +1,213 @@
+{
+  "entities": [
+    {
+      "active": true,
+      "components": [
+        {
+          "data": {
+            "children": [],
+            "isEnabled": true,
+            "parent": null,
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 12
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "type": "Transform"
+        },
+        {
+          "data": {
+            "aspect": 1.7777777777777777,
+            "backgroundColor": {
+              "a": 1,
+              "b": 0.1,
+              "g": 0.1,
+              "r": 0.1
+            },
+            "far": 1000,
+            "fov": 60,
+            "isActive": true,
+            "isEnabled": true,
+            "isOrthographic": true,
+            "near": 0.1,
+            "orthoSize": 6
+          },
+          "type": "Camera"
+        }
+      ],
+      "id": "ent-camera-2d",
+      "layer": 0,
+      "name": "Main Camera 2D",
+      "parentId": null,
+      "static": false,
+      "tags": [
+        "MainCamera"
+      ]
+    },
+    {
+      "active": true,
+      "components": [
+        {
+          "data": {
+            "children": [],
+            "isEnabled": true,
+            "parent": null,
+            "position": {
+              "x": 0,
+              "y": 4,
+              "z": 4
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "type": "Transform"
+        },
+        {
+          "data": {
+            "castShadow": true,
+            "color": "#cfd8e6",
+            "intensity": 0.9,
+            "isEnabled": true,
+            "range": 100,
+            "type": "ambient"
+          },
+          "type": "Light"
+        }
+      ],
+      "id": "ent-light-2d",
+      "layer": 0,
+      "name": "Soft Ambient Light",
+      "parentId": null,
+      "static": false,
+      "tags": []
+    },
+    {
+      "active": true,
+      "components": [
+        {
+          "data": {
+            "children": [],
+            "isEnabled": true,
+            "parent": null,
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": -3
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 44,
+              "y": 26,
+              "z": 1
+            }
+          },
+          "type": "Transform"
+        },
+        {
+          "data": {
+            "castShadow": true,
+            "color": "#08111a",
+            "isEnabled": true,
+            "isVisible": true,
+            "materialId": "",
+            "meshId": "",
+            "metalness": 0,
+            "primitive": "plane",
+            "receiveShadow": true,
+            "roughness": 1
+          },
+          "type": "MeshRenderer"
+        }
+      ],
+      "id": "ent-backdrop-2d",
+      "layer": 0,
+      "name": "Backdrop",
+      "parentId": null,
+      "static": true,
+      "tags": []
+    },
+    {
+      "active": true,
+      "components": [
+        {
+          "data": {
+            "children": [],
+            "isEnabled": true,
+            "parent": null,
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          },
+          "type": "Transform"
+        },
+        {
+          "data": {
+            "isEnabled": true,
+            "mode": "screen",
+            "pixelSize": 0.01,
+            "pointerEvents": false,
+            "src": "ui/novel.html",
+            "zIndex": 0
+          },
+          "type": "HtmlUI"
+        },
+        {
+          "data": {
+            "isEnabled": true,
+            "props": {},
+            "src": "scripts/StoryDirector.ts"
+          },
+          "type": "Script"
+        }
+      ],
+      "id": "ent-story-manager",
+      "layer": 0,
+      "name": "Story Manager",
+      "parentId": null,
+      "static": false,
+      "tags": []
+    }
+  ],
+  "format": "linden-scene",
+  "name": "Main",
+  "settings": {
+    "ambientColor": "#666666",
+    "skybox": null
+  },
+  "version": 2
+}

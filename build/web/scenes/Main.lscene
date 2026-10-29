@@ -1,0 +1,163 @@
+{
+  "format": "linden-scene",
+  "version": 2,
+  "name": "Main",
+  "settings": {
+    "ambientColor": "#666666",
+    "skybox": null
+  },
+  "entities": [
+    {
+      "id": "ent-camera-2d",
+      "name": "Main Camera 2D",
+      "tags": [
+        "MainCamera"
+      ],
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0,
+              12
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "Camera",
+          "data": {
+            "fov": 60,
+            "near": 0.1,
+            "far": 1000,
+            "isOrthographic": true,
+            "orthoSize": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "ent-light-2d",
+      "name": "Soft Ambient Light",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              4,
+              4
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "Light",
+          "data": {
+            "type": "ambient",
+            "color": "#cfd8e6",
+            "intensity": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "id": "ent-backdrop-2d",
+      "name": "Backdrop",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0,
+              -3
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              44,
+              26,
+              1
+            ]
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "primitive": "plane",
+            "color": "#08111a",
+            "roughness": 1,
+            "metalness": 0
+          }
+        }
+      ],
+      "static": true
+    },
+    {
+      "id": "ent-story-manager",
+      "name": "Story Manager",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "HtmlUI",
+          "data": {
+            "src": "ui/novel.html",
+            "mode": "screen",
+            "zIndex": 0,
+            "pointerEvents": false,
+            "pixelSize": 0.01
+          }
+        },
+        {
+          "type": "Script",
+          "data": {
+            "src": "scripts/StoryDirector.ts",
+            "props": {}
+          }
+        }
+      ]
+    }
+  ]
+}
